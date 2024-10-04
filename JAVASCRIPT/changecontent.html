@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Positioning</title>
+        <style>
+            .bluebox{
+                background-color: #3a5795;
+                color: white;
+                height: 100px;
+                width: auto;
+                text-decoration: underline;
+                font-weight: bold
+            }
+            .yellowbox {
+                background-color: rgb(222,224,85);
+                height: 100px;
+                width: auto;
+                text-decoration: overline;
+                font-style: italic;
+                font-size: 1.5em;
+            }
+            .greenbox{
+                background-color: #31af37;
+                height: 100px;
+                width: auto;
+                letter-spacing: 10px;
+                text-shadow: 3px 3px #c18c04;
+                text-indent: 40px;
+            }
+            .great{
+                background-color: #5a3479;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bluebox" id="facebook">
+            <p>Facebook is <span class="great">great</span>.</p>
+        </div>
+        <div class="yellowbox" id="apple">
+            <p>Apple.</p>
+        </div>
+        <div class="greenbox">
+            <p>Microsoft.</p>
+        </div>
+        <button id="button1">Change facebook content.</button>
+        <button id="button2">Change apple content.</button>
+        <script>
+            document.getElementById("button1").onclick=function(){
+                document.getElementById("facebook").innerHTML="<p>Dallas Cowboys!</p>"
+            }
+            document.getElementById("button2").onclick=function(){
+                document.getElementById("apple").innerHTML=
+                    "<ul><li>BMW</li><li>GMC</li><li>Cadillac</li><li>Lexus</li><li>Bugatti</li></ul>"
+            }
+        </script>
+    </body>
+    
+    
+</html>

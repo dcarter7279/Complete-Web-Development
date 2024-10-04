@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Positioning</title>
+        <style>
+            .bluebox{
+                background-color: #3a5795;
+                color: white;
+                height: 100px;
+                width: auto;
+            }
+            .yellowbox {
+                background-color: rgb(222,224,85);
+                height: 100px;
+                width: auto;
+            }
+            .greenbox{
+                background-color: #31af37;
+                height: 100px;
+                width: auto;
+            }
+            .great{
+                background-color: #5a3479;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="bluebox">
+            <p>Facebook is <span class="great">great</span>.</p>
+        </div>
+        <div class="yellowbox">
+            <p>Apple.</p>
+        </div>
+        <div class="greenbox">
+            <p>Microsoft.</p>
+        </div>
+        <script>
+            $(function(){
+                $("*").css("font-size", "16px");
+                
+                //$("p").css("text-align", "center");
+                //$("div > p").css("text-align", "center");
+                //$("div ~ p").css("text-align", "center");
+                //$("div  p").css("text-align", "center");
+                //$("#great").css("background-color","#eb7f3c");
+            });
+        </script>
+    </body>
+    
+    
+</html>
